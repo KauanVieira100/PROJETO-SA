@@ -1,0 +1,85 @@
+/* Estilo básico */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Título centralizado */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+/* Estilo para o botão da aba */
+.tab-button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px 0;
+    transition: background-color 0.3s;
+}
+
+.tab-button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para o conteúdo do serviço */
+.service-content {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.service-content h2 {
+    font-size: 28px;
+    color: #333;
+}
+
+.service-content p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.service-content h3 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.service-content h4 {
+    font-size: 20px;
+    margin-top: 15px;
+    color: #333;
+}
+
+.service-content ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.service-content ul li {
+    font-size: 18px;
+    color: #555;
+}

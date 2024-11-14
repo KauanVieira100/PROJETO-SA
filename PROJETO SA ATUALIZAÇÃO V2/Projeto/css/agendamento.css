@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d8d8e7;  /* Branco suave */
+    color: #333;  /* Texto escuro */
+}
+
+.navbar {
+    background-color: #1c3d6e;  /* Azul escuro */
+    padding: 15px;
+    text-align: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+.navbar a:hover {
+    color: #f4f4f9;  /* Branco suave ao passar o mouse */
+}
+
+.agendamento-section {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;  /* Branco puro */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #1c3d6e;  /* Azul escuro */
+}
+
+.form-agendamento {
+    display: flex;
+    flex-direction: column;  /* Organiza os campos verticalmente */
+    align-items: flex-start; /* Alinha os campos à esquerda */
+}
+
+.form-agendamento label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #333;  /* Texto escuro */
+}
+
+.form-agendamento input,
+.form-agendamento textarea {
+    width: 100%;
+    padding: 12px;  /* Aumenta o espaço interno */
+    margin-top: 5px;
+    border: 1px solid #ccc;  /* Cinza claro */
+    border-radius: 4px;
+    background-color: #f4f4f9;  /* Branco suave */
+    color: #333;  /* Texto escuro */
+    box-sizing: border-box;  /* Inclui padding e border no tamanho total do elemento */
+}
+
+.form-agendamento input:focus,
+.form-agendamento textarea:focus {
+    border-color: #1c3d6e;  /* Azul escuro em foco */
+    outline: none;
+}
+
+.btn-agendar {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #1c3d6e;  /* Azul escuro */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-agendar:hover {
+    background-color: #145280;  /* Tom mais escuro de azul */
+}
+
+/* Estilos para links dentro da agendamento */
+.agendamento-section a {
+    color: #3b638f;  /* Azul claro */
+    text-decoration: none;
+}
+
+.agendamento-section a:hover {
+    color: #1c3d6e;  /* Azul escuro ao passar o mouse */
+}
+
+/* Tabelas e Listas */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ccc;  /* Cinza claro */
+}
+
+th {
+    background-color: #1c3d6e;  /* Azul escuro */
+    color: #fff;
+}
+
+td {
+    background-color: #ffffff;  /* Branco puro */
+    color: #333;
+}
+
+footer {
+    background-color: #1c3d6e;  /* Azul escuro */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #f4f4f9;  /* Branco suave */
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #3b638f;  /* Azul claro */
+}
