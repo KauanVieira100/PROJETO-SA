@@ -1,0 +1,233 @@
+/* Resetando estilos padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1e2a47; /* Azul escuro para o fundo */
+    color: #fff; /* Texto branco para contraste */
+    height: 100%; /* Garantir que o corpo ocupe toda a altura da tela */
+    overflow-y: auto; /* Permite rolagem vertical */
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #b0b0b0;
+}
+
+/* Container principal do formulário */
+.container {
+    width: 100%;
+    max-width: 600px;
+    background-color: #2a3a75; /* Azul escuro para o container */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* Formulário */
+.formulario-agendamento {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Estilo para os campos de formulário */
+section {
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+label {
+    font-size: 1rem;
+    color: #e0e0e0;
+    margin-bottom: 8px;
+    display: block; /* Garantir que o label ocupe a linha inteira */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #4c5c8c; /* Borda em azul mais claro */
+    border-radius: 8px;
+    background-color: #3a4a7e; /* Fundo mais escuro para os campos */
+    margin-bottom: 16px;
+    color: #fff; /* Texto dentro dos campos branco */
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #1e88e5; /* Borda azul brilhante ao focar */
+    background-color: #2f3f6d; /* Fundo mais suave ao focar */
+    outline: none;
+}
+
+/* Estilo para textarea */
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Botões */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+button,
+a {
+    background-color: #1e88e5; /* Azul brilhante para os botões */
+    color: #fff;
+    padding: 14px 24px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    width: 48%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+button:hover,
+a:hover {
+    background-color: #1565c0; /* Azul mais escuro ao passar o mouse */
+    transform: translateY(-3px);
+}
+
+a.voltar {
+    background-color: #8e8e8e;
+}
+
+a.voltar:hover {
+    background-color: #6d6d6d;
+}
+
+/* Estilo para inputs de tipo "select" */
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #3a4a7e;
+    padding-right: 30px;
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 6"%3E%3Cpath d="M1 1l4 4 4-4" stroke="%23999" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/%3E%3C/svg%3E');
+    background-position: right 10px top 50%;
+    background-repeat: no-repeat;
+    background-size: 10px 6px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    .container {
+        padding: 25px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    input[type="time"],
+    select,
+    textarea {
+        font-size: 0.95rem;
+    }
+
+    button,
+    a {
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
+
+    .button-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Estilo para o container de loading */
+.loading-container {
+    display: none; /* Inicialmente escondido */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1e2a47;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    z-index: 9999; /* Garantir que o loading fique acima de outros elementos */
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo para o texto dentro do container de loading */
+.loading-text {
+    text-align: center;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento - Planejamento e Organização Administrativa</title>
+    <link rel="stylesheet" href="css/agendamento.css">
+    <script src="js/validacao.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Agendamento de Serviço - Planejamento e Organização Administrativa</h1>
+        <p>Preencha o formulário abaixo para agendar seu serviço personalizado.</p>
+    </header>
+    <main class="container">
+        <!-- Formulário do agendamento -->
+        <form action="agradecimento.html" method="post" class="form-agendamento">
+            <section class="informacoes-cliente">
+                <h2>Informações do Cliente</h2>
+                <label for="nome_cliente">Nome Completo:</label>
+                <input type="text" id="nome_cliente" name="nome_cliente" required>
+
+                <label for="email_cliente">E-mail:</label>
+                <input type="email" id="email_cliente" name="email_cliente" required>
+
+                <label for="telefone_cliente">Telefone:</label>
+                <input type="tel" id="telefone_cliente" name="telefone_cliente" maxlength="15">
+
+                <label for="empresa_cliente">Nome da Empresa:</label>
+                <input type="text" id="empresa_cliente" name="empresa_cliente" required>
+            </section>
+
+            <section class="detalhes-servico">
+                <h2>Detalhes do Serviço</h2>
+                <label for="tipo_servico">Tipo de Serviço:</label>
+                <select id="tipo_servico" name="tipo_servico" required>
+                    <option value="organizacao_documentos">Criação de Cronogramas</option>
+                    <option value="gestao_projetos">Gestão de Prazos e Tarefas</option>
+                    <option value="atendimento_cliente">Otimização de Processos</option>
+                    <option value="logistica_interna">Suporte Estratégico para Tomadas de Decisão</option>
+                    <option value="outros">Outros</option>
+                </select>
+
+                <label for="descricao_servico">Descrição do Serviço Necessário:</label>
+                <textarea id="descricao_servico" name="descricao_servico" rows="4" required></textarea>
+            </section>
+
+            <section class="preferencias-agendamento">
+                <h2>Preferências de Agendamento</h2>
+                <label for="data_agendamento">Data Preferencial:</label>
+                <input type="date" id="data_agendamento" name="data_agendamento" required min="" />
+
+                <label for="hora_agendamento">Hora Preferencial:</label>
+                <input type="time" id="hora_agendamento" name="hora_agendamento" required>
+            </section>
+
+            <section class="informacoes-adicionais">
+                <h2>Informações Adicionais</h2>
+                <label for="observacoes">Observações:</label>
+                <textarea id="observacoes" name="observacoes" rows="3"></textarea>
+            </section>
+
+            <div class="button-container">
+                <button type="submit">Agendar Serviço</button>
+                <a href="../inicial.html" class="voltar">Voltar para a Página Inicial</a>
+            </div>
+        </form>
+        <!-- Tela de Loading -->    
+        <div id="loading" class="loading-container" style="display:none;">
+            <div class="loading-text">
+                <span>Validando agendamento...</span>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
