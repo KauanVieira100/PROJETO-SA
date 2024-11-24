@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuário</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="profile-info">
+        <a href="../inicial.html"><button class="botaoVoltar" type="submit">Voltar</button></a>
+    </div>
+    <div class="container">
+        <div class="profile">
+            <div class="profile-header">
+                <div class="profile-picture">
+                    <img id="profileImage" src="https://via.placeholder.com/150" alt="Foto de Perfil">
+                    <input type="file" id="imageInput" accept="image/*" style="display:none;">
+                    <button id="changeImageButton">Alterar Foto</button>
+                </div>
+                <div class="profile-info">
+                    <!-- Nome e profissão do usuário -->
+                    <input type="text" id="nameInput" value="Lucas Silva" placeholder="Nome" readonly>
+                    <input type="text" id="jobInput" value="Desenvolvedor Web" placeholder="Profissão" readonly>
+                    <button id="editButton">Editar Perfil</button>
+                </div>
+            </div>
+
+            <div class="profile-details">
+                <h2>Sobre Mim</h2>
+                <!-- Texto sobre o usuário -->
+                <textarea id="bio" placeholder="Escreva uma breve descrição sobre você..." rows="6" readonly>Desenvolvedor apaixonado por tecnologia e inovação.</textarea>
+            </div>
+
+            <div class="contact-info">
+                <h2>Contato</h2>
+                <ul>
+                    <!-- Informações de contato -->
+                    <li><strong>Email:</strong> <input type="email" id="emailInput" value="lucas.silva@example.com" placeholder="Email" readonly></li>
+                    <li><strong>Telefone:</strong> <input type="tel" id="phoneInput" value="(11) 98765-4321" placeholder="Telefone" readonly></li>
+                    <li><strong>Website:</strong> <input type="url" id="websiteInput" value="www.lucassilva.dev" placeholder="Website" readonly></li>
+                </ul>
+            </div>
+
+            <!-- Botão para salvar as alterações -->
+            <button id="saveButton" style="display:none;">Salvar Alterações</button>
+        </div>
+    </div>
+
+    <!-- Link para o arquivo JS -->
+    <script src="js/perfil.js"></script>
+    <script src="../js/darkmode.js"></script>
+
+</body>
+</html>
