@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento - KGB SA</title>
+    <link rel="stylesheet" href="css/agendamento.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="inicial.html">Início</a>
+        <a href="perfil/perfil.html">Minha Conta</a>
+        <a href="index.html" class="logout">Sair da Conta</a>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <section class="agendamento-section">
+        <h1>Agendamento de Consulta</h1>
+        <p>Preencha o formulário abaixo para agendar sua consulta com nossa equipe de especialistas.</p>
+
+        <!-- Formulário de Agendamento -->
+        <form id="form-agendamento" class="form-agendamento" onsubmit="return confirmarAgendamento(event)">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" maxlength="15" required>
+
+            <label for="data">Data do Agendamento:</label>
+            <input type="date" id="data" name="data" required>
+
+            <label for="hora">Hora do Agendamento:</label>
+            <input type="time" id="hora" name="hora" required>
+
+            <label for="mensagem">Mensagem (Opcional):</label>
+            <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva aqui sua mensagem..."></textarea>
+
+            <button type="submit" class="btn-agendar">Confirmar Agendamento</button>
+        </form>
+    </section>
+    <script src="js/agendamento.js"></script>
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KGB SA - Página Inicial</title>
+    <link rel="stylesheet" href="css/pg_inicial.css">
+    <link rel="stylesheet" href="css/acessibilidade.css">
+    <link rel="icon" href="imgs/icone.png" type="image/png">
+</head>
+<body>
+    <div class="menu-acessibilidade" id="menu-acessibilidade">
+        <button class="acessibilidade-btn" id="acessibilidade-btn" onclick="toggleAcessibilidadeMenu()">
+            <img src="imgs/acessibilidade.png" alt="Acessibilidade" />
+        </button>
+        <div class="acessibilidade-options">
+            <button onclick="aumentarFonte()">Aumentar Fonte</button>
+            <button onclick="diminuirFonte()">Diminuir Fonte</button>
+            <button onclick="toggleContraste()">Alto Contraste</button>
+        </div>
+    </div>    
+    <header class="header">
+        
+        <nav class="navbar">
+            <a href="perfil/perfil.html">Perfil</a>
+            <div class="menu">
+                <div class="submenu">
+                    <a href="index.html" class="logout">Sair da Conta</a>
+                </div>
+            </div>
+        </nav>
+        <!--<img src="imgs/kgb.png" alt="Logo do site" class="header-logo"/><!-->
+        <div class="banner">
+            <h1>KGB SOLUTIONS</h1>
+            <p>Atendimento original e personalizado voltado para modalidade de licitações.</p>
+        </div>
+    </header>
+    
+    <!-- Nossos Serviços -->
+    <section class="servicos">
+        <h2 class="subtitle">Nossos Serviços</h2>
+        <div class="servicos-cards">
+            <!-- Primeiro Card -->
+            <div class="card">
+                <img src="imgs/apoio.png" alt="Apoio administrativo e gestão empresarial" class="card-image">
+                <div class="card-content">
+                    <h3>Apoio Administrativo e Gestão Empresarial</h3>
+                    <ul>
+                        <li>Organização e Digitalização de Documentos</li>
+                        <li>Gestão de Projetos</li>
+                        <li>Atendimento ao Cliente</li>
+                        <li>Controle de Agendas e Logística</li>
+
+                    </ul>
+                    <a href="servicos/apoio_administrativo.html" class="card-button">Saiba mais</a>
+                </div>
+            </div>
+            <!-- Segundo Card -->
+            <div class="card">
+                <img src="imgs/financeiro.png" alt="Terceirização financeira" class="card-image">
+                <div class="card-content">
+                    <h3>Terceirização Financeira e Gestão de Recursos</h3>
+                    <ul>
+                        <li>Administração de Fluxo de Caixa</li>
+                        <li>Elaboração de Relatórios Financeiros</li>
+                        <li>Assessoria em Investimentos</li>
+                    </ul>
+                    <a href="servicos/terceirizacao_financeira.html" class="card-button">Saiba mais</a>
+                </div>
+            </div>
+    
+            <!-- Terceiro Card -->
+            <div class="card">
+                <img src="imgs/agenda.png" alt="Planejamento e ajuda com organização administrativa" class="card-image">
+                <div class="card-content">
+                    <h3>Planejamento e Ajuda Com Organização Administrativa</h3>
+                    <ul>
+                        <li>Criação de Cronogramas</li>
+                        <li>Gestão de Prazos e Tarefas</li>
+                        <li>Otimização de Processos</li>
+                        <li>Suporte Estratégico para Tomadas de Decisão</li>
+                    </ul>
+                    <a href="servicos/planejamento_organizacao.html" class="card-button">Saiba mais</a>
+                </div>
+            </div>
+    
+            <!-- Quarto Card -->
+            <div class="card">
+                <img src="imgs/licitacao.png" alt="Consultoria em Licitações" class="card-image">
+                <div class="card-content">
+                    <h3>Consultoria em Licitações Públicas e Privadas</h3>
+                    <ul>
+                        <li>Apoio no processo de licitações públicas e privadas</li>
+                        <li>Análise de Editais e Regulamentos</li>
+                        <li>Análise de Riscos em Licitações</li>
+                    </ul>
+                    <a href="servicos/licitacoes.html" class="card-button">Saiba mais</a>
+                </div>
+            </div>
+
+            <!-- Quinto Card -->
+            <div class="card">
+                <img src="imgs/sistemas.png" alt="Desenvolvimento de Sistemas" class="card-image">
+                <div class="card-content">
+                    <h3>Desenvolvimento de Sistemas</h3>
+                    <ul>
+                        <li>Criação de software sob medida</li>
+                        <li>Automatização de processos empresariais</li>
+                        <li>Desenvolvimento de aplicativos corporativos</li>
+                        <li>Suporte e Manutenção Pós-Implementação</li>
+                    </ul>
+                    <a href="servicos/desenvolvimento_sistemas.html" class="card-button">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- O que nossos clientes dizem -->
+    <section class="clientes">
+        <h2>O que nossos clientes dizem</h2>
+        <div class="testimonials animate-on-scroll">
+            <div class="testimonial">
+                <p>"Excelente serviço! A equipe é muito profissional e atenciosa."</p>
+                <p class="cliente-nome">João Silva</p>
+                <p class="cliente-info">Empresário - São Paulo</p>
+            </div>
+            <div class="testimonial">
+                <p>"A experiência foi incrível, superou todas as minhas expectativas!"</p>
+                <p class="cliente-nome">Maria Oliveira</p>
+                <p class="cliente-info">Designer - Rio de Janeiro</p>
+            </div>
+            <div class="testimonial">
+                <p>"Muito satisfeita com o resultado. Recomendo a todos!"</p>
+                <p class="cliente-nome">Ana Costa</p>
+                <p class="cliente-info">Freelancer - Porto Alegre</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Nós -->
+    <section class="sobre-nos animate-on-scroll">
+        <div class="sobre-nos-content">
+            <div class="sobre-nos-info">
+                <h2>Sobre Nós</h2>
+                <p>Somos uma empresa especializada em oferecer soluções personalizadas para a área de licitações e gestão empresarial. Com uma equipe altamente capacitada, buscamos sempre oferecer os melhores serviços, focando em inovação, eficiência e qualidade no atendimento.</p>
+            </div>
+            <div class="sobre-nos-imagem">
+                <img src="imgs/sobre-nos.png" alt="Nossa equipe" class="imagem-sobre-nos">
+            </div>
+        </div>
+    </section>
+
+    <!-- Agendamento Profissional -->
+    <section class="agendamento">
+        <div class="agendamento-container animate-on-scroll">
+            <h2>Agendamento de Consultoria</h2>
+            <h3>Reserve sua consulta com um de nossos especialistas e descubra como podemos agregar valor ao seu negócio.</h3>
+            <p class="descricao-agendamento">Para agendar, clique no botão abaixo. Nossa equipe entrará em contato com você para confirmar os detalhes e agendar o horário mais conveniente.</p>
+            <a href="agendar.html" class="button agendar-button">Agendar Agora</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+  <!-- Footer -->
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Informações de Contato -->
+        <div class="footer-section">
+            <h3>Contato</h3>
+            <ul>
+                <li>Email: <a href="mailto:contato@kgbsolutions.com.br">contato@kgbsolutions.com.br</a></li>
+                <li>Telefone: +55 (11) 1234-5678</li>
+                <li>Endereço: Rua Exemplo, 123, São Paulo, SP</li>
+            </ul>
+        </div>
+
+        <!-- Redes Sociais -->
+        <div class="footer-section">
+            <h3>Redes Sociais</h3>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/kgbsolutions" target="_blank" class="social-icon">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="30" height="30">
+                </a>
+                <a href="https://www.threads.net/@kgbsolutions" target="_blank" class="social-icon">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/Threads_%28app%29.svg" alt="Threads" width="30" height="30">
+                </a>
+                <!-- Adicione outros ícones de redes sociais aqui, se necessário -->
+            </div>
+        </div>
+        <!-- Links Importantes -->
+        <div class="footer-section">
+            <h3>Links Úteis</h3>
+            <ul>
+                <li><a href="perfil/perfil.html">Perfil</a></li>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="servicos/apoio_administrativo.html">Serviços</a></li>
+                <li><a href="agendar.html">Agendamento</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Copyright -->
+    <div class="footer-bottom">
+        <p>&copy; 2024 KGB Solutions. Todos os direitos reservados.</p>
+    </div>
+</footer>
+    <!-- JavaScript -->
+    <script src="js/darkmode.js"></script>
+</body>
+</html>
